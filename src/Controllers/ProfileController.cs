@@ -142,5 +142,13 @@ namespace Company.WebApplication1.Controllers
 
             return Ok("Your password has been set.");
         }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Teste()
+        {
+            return Ok("Your password has been set.");
+        }
     }
 }

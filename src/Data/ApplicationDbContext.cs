@@ -14,6 +14,8 @@ namespace Company.WebApplication1.Data
         {
         }
 
+
+        public virtual DbSet<Client> Client { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

@@ -18,10 +18,5 @@ namespace Company.WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult Dashboard2()
-        {
-            return View();
-        }
-
     }
 }

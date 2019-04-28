@@ -32,11 +32,11 @@ namespace Company.WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>(config =>
             {
-                config.User.RequireUniqueEmail = true;    // уникальный email
+                config.User.RequireUniqueEmail = true;    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ email
                 config.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 -._@+"; 
                 config.SignIn.RequireConfirmedEmail = false;
             })
