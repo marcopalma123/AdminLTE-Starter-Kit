@@ -145,7 +145,8 @@ namespace Company.WebApplication1.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [AllowAnonymous]
+        //[ValidateAntiForgeryToken]
         public IActionResult Teste()
         {
             return Ok("Your password has been set.");
